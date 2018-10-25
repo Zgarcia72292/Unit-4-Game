@@ -20,6 +20,14 @@ $(document).ready(function () {
    
     var userScore = 0;
   
+    // adding some fun soundbites//
+
+    var audioElementOne = document.createElement("audio");
+    audioElementOne.setAttribute("src", "assets/sounds/Abandon.mp3");
+
+    var audioElementTwo = document.createElement("audio");
+    audioElementTwo.setAttribute("src", "assets/sounds/scientist.mp3");
+
     // Now to begin coding how the game will run by adding a startgame function//
   
     function startGame() {
@@ -68,7 +76,11 @@ function winCheck (){
         
         $("#wins").text("Wins: " + wins);
 
+        
+
         alert("Congratulations!");
+
+        audioElementTwo.play();
 
         resetGame();
     }
@@ -79,9 +91,13 @@ function winCheck (){
         
         $("#losses").text("Losses: " + losses);
 
-        alert("Sorry, try again!");
         
-        resetGame();
+
+        alert("Sorry, try again!");
+
+        audioElementOne.play();
+
+          resetGame();
     }
 
     else {
