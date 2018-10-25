@@ -77,3 +77,11 @@ body {
   margin-left: 10px;
   background-color: aqua;
 }
+
+#random-number {
+  width: 210px;
+  height: 100px;
+  padding: 4px;
+  color: ghostwhite;
+  background-color: greenyellow;
+}
