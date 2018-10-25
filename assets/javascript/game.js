@@ -66,7 +66,7 @@ function winCheck (){
         
         wins++;
         
-        $("#wins").append(wins);
+        $("#wins").text("Wins: " + wins);
 
         alert("Congratulations!");
 
@@ -77,7 +77,7 @@ function winCheck (){
         
         losses++;
         
-        $("#losses").append(losses);
+        $("#losses").text("Losses: " + losses);
 
         alert("Sorry, try again!");
         
